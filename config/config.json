@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "terminology-search-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/terminologySearch/TerminologySearchWebPart.js",
+          "manifest": "./src/webparts/terminologySearch/TerminologySearchWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "TerminologySearchWebPartStrings": "lib/webparts/terminologySearch/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"    
+  }
+}
